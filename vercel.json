@@ -1,6 +1,6 @@
 {
 "rewrites": [
-    { "source": "/.*", "destination": "https://v2-cache-verto-exchange.herokuapp.com" }
+    { "source": "/(.*)", "destination": "https://v2-cache-verto-exchange.herokuapp.com" }
   ],
   "headers": [
     {

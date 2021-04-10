@@ -1,0 +1,16 @@
+{
+"rewrites": [
+    { "source": "/", "destination": "https://v2-cache-verto-exchange.herokuapp.com/" }
+  ],
+  "headers": [
+    {
+      "source": "/token/(.*)/price",
+      "headers" : [
+        {
+          "key" : "Cache-Control",
+          "value" : "public, max-age=60, stale-while-revalidate"
+        }
+      ]
+    }
+  ]
+}

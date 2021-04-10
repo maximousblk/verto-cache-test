@@ -8,7 +8,7 @@
       "headers" : [
         {
           "key" : "Cache-Control",
-          "value" : "max-age=60, s-maxage=60, stale-while-revalidate"
+          "value" : "max-age=10, s-maxage=10, stale-while-revalidate"
         }
       ]
     }

@@ -4,7 +4,7 @@
   ],
   "headers": [
     {
-      "source": "/token/.*/price",
+      "source": "/token/(.*)/price",
       "headers" : [
         {
           "key" : "Cache-Control",

@@ -1,10 +1,10 @@
 {
 "rewrites": [
-    { "source": "/", "destination": "https://v2-cache-verto-exchange.herokuapp.com/" }
+    { "source": "/.*", "destination": "https://v2-cache-verto-exchange.herokuapp.com" }
   ],
   "headers": [
     {
-      "source": "/token/(.*)",
+      "source": "/token/.*/price",
       "headers" : [
         {
           "key" : "Cache-Control",
